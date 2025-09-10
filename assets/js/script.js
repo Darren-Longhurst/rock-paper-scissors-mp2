@@ -16,3 +16,15 @@ $(document).ready(function () {
     }
   }
 })
+
+  // Get computer choice
+  function getComputerChoice() {
+    const index = Math.floor(Math.random() * 3);
+    if (index === 0) {
+      return "rock";
+    } else if (index === 1) {
+      return "paper";
+    } else {
+      return "scissors";
+    }
+  }
