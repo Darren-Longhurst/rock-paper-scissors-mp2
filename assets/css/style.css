@@ -68,7 +68,7 @@ color: var(--primary-color);
 
 /* Header card container */
 .header-card {
-  background-image: url("/assets/images/rock-paper-scissors-hand-icons.png");
+  background-image: url("assets/images/rock-paper-scissors-hand-icons.png");
   background-size: auto;
   max-width: 500px;
   border: 2px solid #000000; 
@@ -80,7 +80,7 @@ color: var(--primary-color);
 
 /* Game card container */
 .game-card {
-  background-image: url("/assets/images/rock-paper-scissors-hand-icons.png");
+  background-image: url("assets/images/rock-paper-scissors-hand-icons.png");
   background-size: auto;
   max-width: 500px;
   border: 2px solid #000000; 
@@ -92,7 +92,7 @@ color: var(--primary-color);
 
 /* Results card container*/
 .results-card {
-  background-image: url("/assets/images/rock-paper-scissors-hand-icons.png");
+  background-image: url("assets/images/rock-paper-scissors-hand-icons.png");
   background-size: auto;
   max-width: 500px;
   border: 2px solid #000000; 
