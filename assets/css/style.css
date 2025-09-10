@@ -1,3 +1,39 @@
 /* Google Fonts Import*/
 
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*CSS Variables*/
+
+:root {
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Cal Sans", sans-serif;
+    --primary-color: #26006e;
+    /*Turqoise*/
+    --secondary-color: #0e79e8;
+    /*Blue*/
+    --highlight-color: #f92aee;
+    /*Hot Pink*/
+    --standard-color: #ffffff;
+    /*White*/
+}
+
+/* Global Font Attributes*/
+
+body {
+  font-family: var(--primary-font);
+}
+
+body h1,
+body h2,
+body h3 {
+  font-family: var(--secondary-font);
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* Body background */
+body {
+  background-color: var(--primary-color);
+}
