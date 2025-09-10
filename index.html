@@ -36,7 +36,6 @@
       <button id=instructions-btn class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#instructionsModal">Games Instructions</button>
       <button id="reset-btn" class="btn btn-outline-dark">Reset Game</button>
     </div>
-  </div>
 </header>
 <main>
     <!-- Game card container -->
@@ -72,13 +71,15 @@
   <div class="modal-dialog">
     <div class="modal-content">
       
-      <!-- Header -->
+      <!-- Modal Header -->
+
+
       <div class="modal-header">
         <h5 class="modal-title" id="instructionsLabel">Game Instructions</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       
-      <!-- Body -->
+      <!-- Modal Body -->
       <div class="modal-body text-start">
         <p>Welcome to <strong>Rock, Paper, Scissors</strong>!</p>
         <ul>
@@ -86,17 +87,21 @@
           <li>The computer will automatically pick its choice.</li>
           <li>Rock beats Scissors, Scissors beats Paper, Paper beats Rock.</li>
           <li>First to <b>5 points</b> wins the game!</li>
+          <li>At the end of the game hit <b>reset</b> to play again</li>
         </ul>
       </div>
       
-      <!-- Footer -->
+      <!-- Modal Footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Got it!</button>
       </div>
     </div>
-  </div>
-</div>
 </main>
+<footer id="copyright" class="container">
+      <div>
+        <p>&copy 2025 Rock Paper Scissors | Built by Darren Longhurst with HTML, CSS, Jquery, JavaScript & Bootstrap</p>
+      </div>
+    </footer>
     <!--Bootstrap and JavaScript links-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/script.js"></script>
