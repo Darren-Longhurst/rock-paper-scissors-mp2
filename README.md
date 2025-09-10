@@ -9,7 +9,7 @@ The mechanics of the game are straight forward, which allowed me time to focus o
 
 The game contains **conditional logic, randomisation, event handling, global and block scope functions**.
 
-*** Index - Table of Contents ***
+## Index - Table of Contents ##
 
 - [UX](#ux)
 - [Design](#design)
@@ -60,7 +60,7 @@ The game contains **conditional logic, randomisation, event handling, global and
 * Google fonts have been used in this project and font family Open Sans & Cal Sans have been used with a sans-serif fallback font.
 * CSS variables have been used throughout the CSS stylesheet to create globally accessible fonts, which keep continuity and are easily updated throughout the website.
 
-![google-fonts-import-link](assets/images/mp2-google-fonts.png)
+![google-fonts-import-link](assets/README-files/mp2-google-fonts.png)
 
 ## Wireframes
 
