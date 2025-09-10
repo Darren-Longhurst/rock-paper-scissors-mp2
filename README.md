@@ -49,11 +49,11 @@ The game contains **conditional logic, randomisation, event handling, global and
 * I used an image picker from the background image **(Rock, Paper, Scissors)** for the x2 container div's used in the game to pull the prominent colours for the buttons and text used throughout the site.
 * I have also utilised CSS variables to allow quick global changes across the site if required.
 * The upper, middle and lower div container box uses the background image with a white overlay set to 85% opacity.
-* The body background uses #26006e, the Player icon uses #f92aee, Computer icon uses #0e79e8, Choices icons also use #26006e and the Result text is dynamic dependant on whether the result is win/tie/lose. i.e Player = #f92aee, Computer = #0e79e8, Tie = #26006e
+* The body background uses <span style="color:#26006e">#26006e</span>, the Player icon uses <span style="color:#f92aee"> #f92aee</span> , Computer icon uses <span style="color: #0e79e8"> #0e79e8</span> , Choices icons also use <span style="color: #26006e"> #26006e</span> and the Result text is dynamic dependant on whether the result is win/tie/lose. i.e Player =<span style="color: #f92aee"> #f92aee</span> , Computer = <span style="color: #0e79e8"> #0e79e8</span> Tie = <span style="color: #26006e"> #26006e</span>
 * Gameplay scores also follow the same colour reflective principles.
-* The **"Games Instructions"** button uses colour #26006e and then changes to #f92aee on:hover.
-* The **Reset Game** button uses colour #f92aee and #26006e on:hover.
-* #ffff is used on buttons with the hover attribute enabled to give greater contrast.
+* The **"Games Instructions"** button uses colour <span style="color:#26006e">#26006e</span> and then changes to <span style="color:#f92aee">#f92aee</span> on:hover.
+* The **Reset Game** button uses colour<span style="color:#f92aee"> #f92aee</span> and <span style="color: #26006e"> #26006e</span> on:hover.
+* <span style="color: #ffff">#ffff</span> is used on button text with the hover attribute enabled to give greater contrast.
 
 ## Typography
 
