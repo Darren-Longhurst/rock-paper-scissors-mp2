@@ -61,3 +61,27 @@ $(document).ready(function () {
       $(".choice").css("pointer-events", "none");
     }
   }
+
+  // Handle player choice click
+  $(".choice").click(function () {
+    const playerChoice = this.id;
+    const computerChoice = getComputerChoice();
+    const winner = getWinner(playerChoice, computerChoice);
+
+    if (winner === "player") {
+      playerScore++;
+    } else if (winner === "computer") {
+      computerScore++;
+    } else {
+      tieScore++;
+    }
+
+    showResultMessage(playerChoice, computerChoice, winner);
+    updateScoreboard();
+    checkGameOver();
+  });
+
+  // Reset button click
+  $("#reset-btn").click(function () {
+    resetGame();
+  });
