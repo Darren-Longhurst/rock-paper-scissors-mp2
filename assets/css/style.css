@@ -37,3 +37,167 @@ h1 {
 body {
   background-color: var(--primary-color);
 }
+
+/*Button styling*/
+#instructionsModal .btn {
+border-radius: 0.5rem;
+border: 2px solid;
+font-weight: bold;
+}
+
+#instructions-btn {
+border: 2px solid;
+color: var(--primary-color);
+}
+#instructions-btn:hover {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: var(--standard-color);
+}
+
+#reset-btn {
+  border: 2px solid;
+  color: var(--highlight-color);
+}
+
+#reset-btn:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--standard-color);
+}
+
+/* Header card container */
+.header-card {
+  background-image: url("/assets/images/rock-paper-scissors-hand-icons.png");
+  background-size: auto;
+  max-width: 500px;
+  border: 2px solid #000000; 
+  border-radius: 15px;
+  padding: 20px 30px; 
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Game card container */
+.game-card {
+  background-image: url("/assets/images/rock-paper-scissors-hand-icons.png");
+  background-size: auto;
+  max-width: 500px;
+  border: 2px solid #000000; 
+  margin: 0 auto;
+  padding: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Results card container*/
+.results-card {
+  background-image: url("/assets/images/rock-paper-scissors-hand-icons.png");
+  background-size: auto;
+  max-width: 500px;
+  border: 2px solid #000000; 
+  margin: 0 auto;
+  padding: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* VS display icons */
+#vs-display {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+/* Player and computer icon colors */
+#player-icon {
+  color: var(--highlight-color); 
+}
+
+#computer-icon {
+  color: var(--secondary-color);
+}
+
+/* Choice icons styling with custom colors */
+.choice-icon {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.rock-icon, .paper-icon, .scissors-icon {
+  color: var(--primary-color);
+}
+
+/*Scores*/
+.player-score {
+  color: var(--highlight-color);
+}
+
+.computer-score {
+  color: var(--secondary-color);
+}
+
+/* Result alert styling */
+#result {
+  font-weight: 500;
+}
+
+/* Game Win */
+.game-win h2{
+  color: var(--highlight-color)
+}
+
+/* Game Lose */
+.game-lose h2{
+  color: var(--secondary-color);
+}
+
+/* Game Draw */
+.game-draw h2{
+  color: var(--primary-color);
+}
+
+/* Media Queries*/
+
+/* Default (mobile-first) */
+.header-card,
+.game-card,
+.results-card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .header-card,
+  .game-card,
+  .results-card {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .header-card,
+  .game-card,
+  .results-card {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .header-card,
+  .game-card,
+  .results-card {
+    max-width: 960px;
+  }
+}
+
+/* Extra large (≥1200px) */
+@media (min-width: 1200px) {
+  .header-card,
+  .game-card,
+  .results-card {
+    max-width: 1140px;
+  }
+}
