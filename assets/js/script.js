@@ -85,6 +85,27 @@ $(document).ready(function () {
     }
   }
 
+    // Reset game
+  function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    tieScore = 0;
+
+      // Reset icons
+    $("#player-icon").html('<i class="fas fa-user"></i>');
+    $("#computer-icon").html('<i class="fas fa-desktop"></i>');
+
+    // Reset scoreboard and result
+    updateScoreboard();
+    $("#result")
+      .removeClass("game-win game-draw game-lose")
+      .addClass("game-draw")
+      .html("<h2>Let's go again, show them who's boss!</h2>");
+
+    // Re-enable choices
+    $(".choice").css("pointer-events", "auto");
+  }
+
   // Handle player choice click
   $(".choice").click(function () {
     const playerChoice = this.id;
