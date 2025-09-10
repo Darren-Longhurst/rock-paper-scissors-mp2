@@ -166,6 +166,64 @@ color: var(--primary-color);
   margin: 0 auto;
 }
 
+/*404 Page Styling*/
+
+.redirect {
+      background-color: var(--standard-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+    .notfound-container {
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start; 
+      align-items: center;       
+      min-height: 100vh;         
+      padding-top: 50px;         
+      background-color: var(--standard-color); 
+    }
+
+    .redirect-h1 {
+      font-size: 6rem;
+      color: var(--primary-color);
+    }
+
+    .redirect-h2 {
+      color: var(--highlight-color);
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-home {
+      background-color: var(--highlight-color);
+      color: var(--standard-color);
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .btn-home:hover {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      color: var(--standard-color);
+    }
+
+    .icons {
+      font-size: 3rem;
+      margin: 1rem 0;
+      color: var(--primary-color);
+    }
+
 /* Small devices (≥576px) */
 @media (min-width: 576px) {
   .header-card,
