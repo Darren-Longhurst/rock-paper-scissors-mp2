@@ -134,3 +134,7 @@ I would have loved to have offered the player the opportunity to choose other Ro
 
 ## Testing
 
+* [W3C HTML](https://validator.w3.org/) HTML markup validator 
+* [W3C CSS](https://jigsaw.w3.org/css-validator/) validator 
+* Testing responsiveness, performance and accessibilty with Google Dev tools and lighthouse
+
