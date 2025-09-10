@@ -43,6 +43,24 @@ $(document).ready(function () {
     }
   }
 
+  // Update scoreboard
+  function updateScoreboard() {
+    $("#scoreboard").html(`
+      <div class="row">
+        <div class="col">
+          <h5 class="player-score">You're score: ${playerScore}</h5>
+        </div>
+        <div class="col">
+          <h5>Ties: ${tieScore}</h5>
+        </div>
+        <div class="col">
+          <h5 class="computer-score">Computer score: ${computerScore}</h5>
+        </div>
+        
+      </div>
+    `);
+  }
+
     // Show result message and VS display
   function showResultMessage(playerChoice, computerChoice, winner) {
     $("#player-icon").html(getChoiceIcon(playerChoice));
