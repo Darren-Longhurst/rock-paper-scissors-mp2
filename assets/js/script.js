@@ -44,6 +44,29 @@ $(document).ready(function () {
     }
   }
 
+    // Show result message and VS display
+  function showResultMessage(playerChoice, computerChoice, winner) {
+    $("#player-icon").html(getChoiceIcon(playerChoice));
+    $("#computer-icon").html(getChoiceIcon(computerChoice));
+
+    // Remove classes from previous game
+    $("#result").removeClass("game-win game-lose game-draw");
+
+ let message = "";
+    if (winner === "player") {
+      message = "You win this round!";
+      $("#result").addClass("game-win");
+    } else if (winner === "computer") {
+      message = "Computer wins this round!";
+      $("#result").addClass("game-lose");
+    } else {
+      message = "It's a tie!";
+      $("#result").addClass("game-draw");
+    }
+
+    $("#result").html(`<h2>${message}</h2>`);
+  }
+
   // Check if game is over
   function checkGameOver() {
     if (playerScore >= winScore || computerScore >= winScore) {
