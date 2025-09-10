@@ -15,7 +15,6 @@ $(document).ready(function () {
       return '<i class="fas fa-hand-scissors"></i>';
     }
   }
-})
 
   // Get computer choice
   function getComputerChoice() {
@@ -129,3 +128,8 @@ $(document).ready(function () {
   $("#reset-btn").click(function () {
     resetGame();
   });
+
+    // Initialize scoreboard and result
+  updateScoreboard();
+  $("#result").html(`<h2>Choose your icon now. First to <strong>${winScore}</strong> wins the game.</h2>`);
+});
