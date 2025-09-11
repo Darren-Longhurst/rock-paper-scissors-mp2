@@ -70,7 +70,6 @@ body {
 .header-card {
   background-image: url("../images/rock-paper-scissors-hand-icons.png");
   background-size: auto;
-  max-width: 500px;
   border: 2px solid #000000;
   border-radius: 15px;
   padding: 20px 30px;
