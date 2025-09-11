@@ -1,6 +1,7 @@
+![Image](assets/README-files/site-preview.png)
 # Rock, Paper Scissors Project
 
-### Live website can be found [here]().
+### Live website can be found [here](https://darren-longhurst.github.io/rock-paper-scissors-mp2/index.html).
 ---
 ## Project Rationale
 
