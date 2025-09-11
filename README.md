@@ -127,14 +127,45 @@ I would have loved to have offered the player the opportunity to choose other Ro
 * JavaScript (ES6) For running the game logic and scoreboard updates
 * JQuery To simplify DOM manipulation and event handling
 * Font Awesome iProviding the games icons
-* [Bootstrap] 5 (https://getbootstrap.com/) 5.3.3 For responsive layout and custom attributes
+* [Bootstrap](https://getbootstrap.com/) 5.3.3 For responsive layout and custom attributes
 * CSS Variables For defining reusable colours and consistent syling
 * Visual Studio Code - As my IDE using command line to push code to GitHub
 * Github - To host my repository
 
-## Testing
+## Manual Testing
 
 * [W3C HTML](https://validator.w3.org/) HTML markup validator 
 * [W3C CSS](https://jigsaw.w3.org/css-validator/) validator 
 * Testing responsiveness, performance and accessibilty with Google Dev tools and lighthouse
+
+### Responsiveness and browser compatibility
+
+* Website tested across multiple browsers (Chrome/Safari/IE/Firefox) and using all available options of device screensize through Chrome dev tools for responsiveness. Dev tools has been great for ironing out padding issues linked to various screen sizes which I'll elaborate on in the #bugs section.
+
+## Github pages deployment
+
+* Initial Pages deployment flagged a directory issue with the background image. 
+
+![background-image](assets/README-files/manual-testing/background-missing.png)
+
+This was corrected from: **(assets/images/rock-paper-scissors-hand-icons.png)** to 
+                         **(../images/rock-paper-scissors-hand-icons.png)**
+
+## Validator testing
+
+### HTML
+
+* [W3C HTML](https://validator.w3.org/) used to check validation of each page of the project and check for any code sytax errors throughout.
+* One error code found being a forward / before the closing bracket around the favicon section in the header within index.html where no closing / was needed, using the find and search function within vs code, all unwanted items were removed and retested receiving a pass.
+
+![html-pass](assets/README-files/manual-testing/w3-test-complete.png)
+
+## CSS
+
+[W3C CSS](https://jigsaw.w3.org/css-validator/) validator was used to check css validity, no errors were reported.
+
+![css-pass](assets/README-files/manual-testing/w3-css-test-complete.png)
+
+
+###
 
