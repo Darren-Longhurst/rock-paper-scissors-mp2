@@ -1,11 +1,11 @@
- //Global variables
+//Global variables
 $(document).ready(function () {
   let playerScore = 0;
   let computerScore = 0;
   let tieScore = 0;
   const winScore = 5;
 
-    // Map choice to Font Awesome icon
+  // Map choice to Font Awesome icon
   function getChoiceIcon(choice) {
     if (choice === "rock") {
       return '<i class="fas fa-hand-rock"></i>';
@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
   }
 
-    // Determine winner
+  // Determine winner
   function getWinner(player, computer) {
     if (player === computer) {
       return "tie";
@@ -61,7 +61,7 @@ $(document).ready(function () {
     `);
   }
 
-    // Show result message and VS display
+  // Show result message and VS display
   function showResultMessage(playerChoice, computerChoice, winner) {
     $("#player-icon").html(getChoiceIcon(playerChoice));
     $("#computer-icon").html(getChoiceIcon(computerChoice));
@@ -69,7 +69,7 @@ $(document).ready(function () {
     // Remove classes from previous game
     $("#result").removeClass("game-win game-lose game-draw");
 
- let message = "";
+    let message = "";
     if (winner === "player") {
       message = "You win this round!";
       $("#result").addClass("game-win");
@@ -91,24 +91,28 @@ $(document).ready(function () {
       if (playerScore > computerScore) {
         finalMessage = "Great job, you've won the game!";
         $("#result").html(`<h2>${finalMessage}</h2>`);
-        $("#result").removeClass("game-win game-draw game-lose").addClass("game-win");
+        $("#result")
+          .removeClass("game-win game-draw game-lose")
+          .addClass("game-win");
       } else {
         finalMessage = "Damn it, computer won the game!";
         $("#result").html(`<h2>${finalMessage}</h2>`);
-        $("#result").removeClass("game-win game-draw game-lose").addClass("game-lose");
+        $("#result")
+          .removeClass("game-win game-draw game-lose")
+          .addClass("game-lose");
       }
 
       $(".choice").css("pointer-events", "none");
     }
   }
 
-    // Reset game
+  // Reset game
   function resetGame() {
     playerScore = 0;
     computerScore = 0;
     tieScore = 0;
 
-      // Reset icons
+    // Reset icons
     $("#player-icon").html('<i class="fas fa-user"></i>');
     $("#computer-icon").html('<i class="fas fa-desktop"></i>');
 
@@ -147,7 +151,9 @@ $(document).ready(function () {
     resetGame();
   });
 
-    // Initialize scoreboard and result
+  // Initialize scoreboard and result
   updateScoreboard();
-  $("#result").html(`<h2>Choose your icon now. First to <strong>${winScore}</strong> wins the game.</h2>`);
+  $("#result").html(
+    `<h2>Choose your icon now. First to <strong>${winScore}</strong> wins the game.</h2>`,
+  );
 });
