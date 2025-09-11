@@ -24,17 +24,15 @@ The game contains **conditional logic, randomisation, event handling, global and
 
 ### User Stories
 
-* As a first time player, I want to quickly understand how to play the game and start playing without any confusion.
-* As a first time player, I want to clearly see my choice and the reflecting computer choice in order to understand how the game works.
-* As a first time player, I want to see the scoreboard update after either I or the computer has won a round so I can track progress in order to win the game.
-* As a first time player, I want the game to tell me when either I or the computer has won so I know the game is complete.
-* As a user, I want a reset button so I can restert the gme whenever I want
-* As a user, I want win/lose/draw visual feedback for the game to be stimulating and engaging.
-* As a user, I want clear instructions available in a seperate modal, so I can refer to these whenever I like and keep the game playing area free from clutter.
-* As a user, I want the interface to be mobile-friendly for me to play the game on whichever device I desire.
-* As a user, I want a 404 fallback error page with design continuity so if I land on the wrong link, I can see its part of the website and navigate back to the gam easily.
-* As a returning user, I want to be able to quickly get into the game without having to bypass a game instructions pop up window.
-* As a returning user I want to always have the reset button available to reset the game without having to reload the page.
+* T01 As a first time player, I want to quickly understand how to play the game and start playing without any confusion.
+* T02 As a first time player, I want to clearly see my choice and the reflecting computer choice in order to understand how the game works.
+* T03 As a first time player, I want to see the scoreboard update after either I or the computer has won a round so I can track progress in order to win the game.
+* T04 As a first time player, I want the game to tell me when either I or the computer has won so I know the game is complete.
+* T05 As a user, I want a reset button so I can restert the gme whenever I want
+* T06 As a user, I want win/lose/draw visual feedback for the game to be stimulating and engaging.
+* T07 As a user, I want clear instructions available in a seperate modal, so I can refer to these whenever I like and keep the game playing area free from clutter.
+* T08 As a user, I want the interface to be mobile-friendly for me to play the game on whichever device I desire.
+* T09 As a user, I want a 404 fallback error page with design continuity so if I land on the wrong link, I can see its part of the website and navigate back to the game easily.
 
 ## Design
 
@@ -132,7 +130,42 @@ I would have loved to have offered the player the opportunity to choose other Ro
 * Visual Studio Code - As my IDE using command line to push code to GitHub
 * Github - To host my repository
 
-## Manual Testing
+## Testing (Manual & Integration)
+
+I wanted to demonstrate how to utilise both manual and integration tests throughout this project.
+Both have their pro's and cons but I feel both are essential in order to produce a well rounded and complete project.
+
+### Manual testing pros and cons:
+
+**Pros:**
+
+* Easy to start, no setup needed.
+
+* Good for finding usability issues.
+
+**Cons:**
+
+* Time-consuming.
+
+* Prone to human error.
+
+* Not scalable for large projects.
+
+### Integration testing pros and cons
+
+**Pros:**
+
+* Faster, repeatable, and reliable.
+
+* Great for catching bugs early when components don’t “talk” to each other correctly.
+
+**Cons:**
+
+* Requires setup (e.g., Jest or Mocha).
+
+* More technical knowledge needed
+
+### Manual Testing
 
 * [W3C HTML](https://validator.w3.org/) HTML markup validator 
 * [W3C CSS](https://jigsaw.w3.org/css-validator/) validator 
@@ -153,6 +186,8 @@ This was corrected from: **(assets/images/rock-paper-scissors-hand-icons.png)** 
 
 ## Validator testing
 
+
+
 ### HTML
 
 * [W3C HTML](https://validator.w3.org/) used to check validation of each page of the project and check for any code sytax errors throughout.
@@ -166,6 +201,81 @@ This was corrected from: **(assets/images/rock-paper-scissors-hand-icons.png)** 
 
 ![css-pass](assets/README-files/manual-testing/w3-css-test-complete.png)
 
+## JS Hint
 
-###
+Js Hint validator didn't flag any issues through it's emulator
+
+![js-hint](assets/README-files/manual-testing/JSHint.png)
+
+
+### Lighthouse
+
+With validity testing complete, I opened chome dev tools and lighthouse to check the sites performance and accessibility.
+
+No issues of note, website performance is very good. 
+
+![lighthouse results](assets/README-files/manual-testing/lighthouse-results.png)
+
+## Manual test cases
+
+Test cases in the table reflect user stories mentioned earlier in this docuement:
+
+![test-results](assets/README-files/manual-testing/test-cases.png)
+
+## Jest Integration testing
+
+All 9 Jest test cases passed through Jest with no issues
+
+![jest-test-results](assets/js/js_tests/gameLogic-testing.png)
+
+Here is a copy of the Jest test cases
+
+![test-results](assets/js/js_tests/jest-testing.png)
+
+## bugs
+
+* There were a few incidents of needing to use increased attribute specificity in order to apply custom CSS styling becasue of Bootstrap conflicts. One example being my use of custom button CSS styling, I had to add an additional level css specificity to target the HTML succesfully.
+
+## Deployment
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+ - Alternatively Click [Here](https://github.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+## Forking
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+## Making a Local Clone
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+    <pre><code>`$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`</code></pre>
+
+7. Press Enter. Your local clone will be created.
+
+    <pre><code>$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+    Cloning into `CI-Clone`...
+    remote: Counting objects: 10, done.
+    remote: Compressing objects: 100% (8/8), done.
+    remove: Total 10 (delta 1), reused 10 (delta 1)
+    Unpacking objects: 100% (10/10), done.</code></pre>
+
+## Credits 
+
+* For game inspiration I visited https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/
+* When stuck in a bit of a code block, I found [W3 Schools](https://www.w3schools.com/) particularly helpful.
+* For formatting HTML and CSS I used [Beautifier.io](https://beautifier.io/)
+* Thanks to my tutor Brian Macharia for all is help with this.
 
