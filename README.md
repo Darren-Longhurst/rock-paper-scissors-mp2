@@ -65,8 +65,8 @@ The game contains **conditional logic, randomisation, event handling, global and
 
 I have used Balsamiq **https://balsamiq.cloud/** to design the basic layout for this game. All pages and modals are dynamic and responsive, shown here in the wireframe image links:
 
-* [Home Page](wireframes/mp2-project-homepage.png)
-* [Instructions Modal](wireframes/mp2-project-modal.png)
+* [Home Page](assets/README-files/wireframes/homepage_wireframe.png)
+* [Instructions Modal](assets/README-files/wireframes/modal_wireframe.png)
 
 ## Features
 
@@ -131,7 +131,8 @@ I would have loved to have offered the player the opportunity to choose other Ro
 * Visual Studio Code - As my IDE using command line to push code to GitHub
 * Github - To host my repository
 
-## Testing (Manual & Integration)
+## Testing
+### (Manual & Integration)
 
 I wanted to demonstrate how to utilise both manual and integration tests throughout this project.
 Both have their pro's and cons but I feel both are essential in order to produce a well rounded and complete project.
