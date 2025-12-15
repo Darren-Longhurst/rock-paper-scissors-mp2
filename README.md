@@ -5,10 +5,32 @@
 ---
 ## Project Rationale
 
-I chose to build a **Rock, Paper, Scissors** for my second milestone project becuase it is a well known, simple game and perfectly demonstrates entry level **JavaScript** logic and front end developement skills.
-The mechanics of the game are straight forward, which allowed me time to focus on the UX, styling and game interactivity, rather than eplaining complex game rules.
+This Rock-Paper-Scissors application was developed as part of a milestone project to demonstrate core front-end development skills using HTML, CSS, JavaScript, and jQuery. The project was chosen because it provides a simple, interactive user interface to apply decision-making logic and DOM manipulation, all while fitting within the scope of the project requirements.
 
-The game contains **conditional logic, randomisation, event handling, global and block scope functions**.
+### Learning Objectives
+
+The primary learning goals of this project were to:
+- Practice JavaScript event handling and decision-making logic
+- Use jQuery to simplify DOM manipulation and enhance functionality
+- Apply basic UI and UX principles to create an intuitive interface
+- Test functionality across different browsers and screen sizes
+- Deploy a fully functional web application using GitHub Pages
+
+### User Benefits
+
+The application allows users to quickly engage with a classic game in a simple and accessible way. Clear buttons, instant feedback on outcomes, and visible score tracking ensure that users understand both their actions and the game results without confusion. The minimal interface reduces cognitive load and makes the game suitable for casual or first-time users.
+
+### Design Decisions
+
+A button-based input system was chosen to provide immediate and unambiguous user interaction. The layout was designed to clearly separate player choices, computer choices, and results, improving readability and usability. Both **vanilla JavaScript** and **jQuery** were used, with jQuery simplifying DOM manipulation, event handling, and the management of UI elements.
+
+### Alternative Approaches Considered
+
+Alternative implementations such as using alert pop-ups for results, animations, or relying solely on vanilla JS libraries were considered. However, the mix of vanilla JS and jQuery was selected to balance **simplicity** and **ease of DOM handling**, maintaining full control over game logic while reducing the complexity of managing elements manually.
+
+### Future Improvements and Testing
+
+Future improvements could include additional game modes (such as best-of-three rounds), persistent score storage using local storage, enhanced visual feedback, and improved accessibility features. Expanded manual testing scenarios could also be added to further validate usability and functionality across a wider range of devices.
 
 ## Index - Table of Contents ##
 
